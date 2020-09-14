@@ -4,6 +4,11 @@
 }
 
 @media all and (max-width:800px) {
+    .dashboard {
+        height: 100%;
+        overflow-y: scroll;
+    }
+
     #menu__toggle {
         opacity: 0;
         display: block;
@@ -34,7 +39,7 @@
 
     .menu__box {
         display: block;
-        position: fixed;
+        position: absolute;
         visibility: hidden;
         top: 0;
         left: -100%;
@@ -46,7 +51,7 @@
     .menu__btn {
         display: flex;
         align-items: center;
-        position: fixed;
+        position: absolute;
         top: 20px;
         left: 20px;
         width: 26px;
