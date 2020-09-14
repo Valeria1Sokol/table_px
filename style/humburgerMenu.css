@@ -6,6 +6,7 @@
 @media all and (max-width:800px) {
     .dashboard {
         height: 100%;
+        width: 100%;
         overflow-y: scroll;
     }
 
@@ -35,6 +36,10 @@
     #menu__toggle:checked ~ .menu__box {
         visibility: visible;
         left: 0;
+    }
+    #menu__toggle:checked ~ .content
+    {
+        overflow-y: hidden;
     }
 
     .menu__box {
