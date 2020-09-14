@@ -17,7 +17,7 @@
 <body>
     <div class="contentBox">
         <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
+            <input id="menu__toggle" type="checkbox" onclick="myFunction()" />
 
             <label class="menu__btn" for="menu__toggle">
                 <span></span>
@@ -551,6 +551,22 @@
         </section>
     </div>
     <script src="script.js"></script>
+    <script>
+        function myFunction() {
+
+            // If the checkbox is checked, display the output text
+            if (document.querySelector('#menu__toggle:checked') !== null) {
+                $('body').css({
+                    overflowY: 'hidden'
+                })
+            } else {
+                 $('body').css({
+                    overflowY: 'scroll'
+                })
+            }
+        }
+
+    </script>
 
 </body>
 

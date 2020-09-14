@@ -37,9 +37,9 @@
         visibility: visible;
         left: 0;
     }
-    #menu__toggle:checked ~ .content
+    #menu__toggle:checked ~ body
     {
-        overflow-y: hidden;
+        overflow: hidden;
     }
 
     .menu__box {
