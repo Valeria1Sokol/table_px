@@ -1,0 +1,136 @@
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    height: 161px;
+    visibility: hidden;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #52575D19;
+    border: 1px solid #70707024;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 0%;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #4D4D4D;
+    padding: 0;
+}
+
+.notification .popuptext {
+    width: 258px;
+    left: -230px !important;
+    margin-top: 10px;
+}
+
+.userBox .popuptext {
+    width: 159px;
+    left: -90px !important;
+    margin-top: 5px;
+}
+
+.searchBox .popuptext {
+    width: 366px;
+    margin: 0 0 0 21px;
+}
+
+.searchBox .popuptext::before {
+    display: none;
+}
+
+.popuptext ul {
+    margin: 0;
+}
+
+.popup .popuptext li {
+    height: 39px;
+    list-style: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E8E8E8;
+    cursor: pointer;
+}
+
+.popup .popuptext li:last-of-type {
+    border: none;
+}
+
+.popup .popuptext li:hover {
+    background: #F0B52D0F;
+}
+
+/* Popup arrow */
+.popup .popuptext::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 90.6%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    border-top: 1px solid #E8E8E8;
+    border-left: 1px solid #E8E8E8;
+    transform: rotate(45deg);
+}
+
+.userBox .popuptext::before {
+    left: 87.6%;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media all and (max-width:1453px) {
+    .notification .popuptext {
+        left: -18px !important;
+        margin-top: 5px;
+    }
+
+    .notification .popuptext::before {
+
+        left: 7.6%;
+
+    }
+}
+
+@media all and (max-width:425px) {
+    .searchBox .popuptext {
+        width: 300px;
+        margin: 0;
+    }
+}
