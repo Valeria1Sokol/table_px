@@ -117,4 +117,9 @@ $('.hasSub').click(function () {
 //    var popup = document.getElementById("myPopup4");
 //    popup.classList.toggle("show");
 //}
-
+var modal1 = document.getElementById("closeAll");
+ window.onclick = function (event) {
+           if (event.target == modal1) {
+               $('#menu__toggle').prop('checked', false);
+           }
+       } 

@@ -4,9 +4,11 @@
 }
 
 @media all and (max-width:800px) {
+
+
     .dashboard {
         height: 100%;
-        width: 100%;
+        width: 60%;
         overflow-y: scroll;
     }
 
@@ -37,9 +39,24 @@
         visibility: visible;
         left: 0;
     }
-    #menu__toggle:checked ~ body
-    {
+
+    #menu__toggle:checked ~ body {
         overflow: hidden;
+    }
+
+    .m-menu__overlay {
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+        z-index: 9;
+        display: none;
+        transition: all 1s;
+    }
+
+    #menu__toggle:checked ~ .m-menu__overlay {
+        display: block;
     }
 
     .menu__box {
@@ -85,5 +102,17 @@
     .menu__btn > span::after {
         content: '';
         top: 8px;
+    }
+}
+
+@media all and (max-width:600px) {
+    .dashboard {
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .menu {
+        height: 884px;
     }
 }

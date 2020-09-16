@@ -24,7 +24,7 @@
     }
 
     .menu {
-        height: 663px;
+        /*        height: 663px;*/
         overflow-y: auto;
     }
 
@@ -62,28 +62,28 @@
     }
 
     .slider .slide {
-        width: 200%;
+        width: 250%;
     }
 
     .slider .column1 {
-        width: 15%;
+        /*        width: 15%;*/
     }
 
     .slider .column2,
     .slider .column3 {
-        width: 13%;
+        /*        width: 13%;*/
     }
 
     .slider .column4 {
-        width: 10%;
+        /*        width: 10%;*/
     }
 
     .slider .column5 {
-        width: 10%;
+        /*        width: 10%;*/
     }
 
     .slider .column6 {
-        width: 30vw;
+        /*        width: 30vw;*/
     }
 
     .boxWelcome {
@@ -105,8 +105,8 @@
     }
 }
 
-@media all and (max-width:360px) {
-    .fa-caret-down:before {
-        top: -2px;
+@media all and (max-width: 320px) {
+    .slider .slide {
+        width: 350%;
     }
 }
