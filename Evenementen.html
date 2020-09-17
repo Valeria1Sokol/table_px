@@ -13,6 +13,7 @@
 
 
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -169,6 +170,7 @@
                 <div class="tickets">
                     <div class="rowHead">
                         <p>Tickets</p>
+                        <button type="button" class="tooltipIcon" data-toggle="tooltip" data-placement="right" title="Lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem Lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem Lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem"></button>
                     </div>
                     <div class="content">
                         <div class="line">
@@ -284,7 +286,7 @@
                         </div>
                         <div class="line">
                             <form>
-                                <label>Additionele informatie</label>
+                                <label>Additionele informatie <button type="button" class="tooltipIcon" data-toggle="tooltip" data-placement="right" title="Lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem Lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem Lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem lorem ipsem"></button></label>
                                 <textarea placeholder="Additionele informatie"></textarea>
                             </form>
                             <div class="settingsBox">
@@ -313,7 +315,7 @@
             <div class="widthBox">
                 <div class="tableTickets">
                     <div id="sortablelist" data-id="1">
-                        <div class="">
+                        <div class="" style="border-radius: 6px;">
                             <div class="rowHead">
                                 <p>Saturday Tickets</p>
                             </div>
@@ -399,7 +401,7 @@
                             </div>
 
                         </div>
-                        <div class="">
+                        <div class="" style="border-radius: 6px;">
                             <div class="rowHead">
                                 <p>Ungrouped</p>
                             </div>
@@ -708,6 +710,10 @@
             dateFormat: "H:i",
             time_24hr: true
         });
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        //        $('#example').tooltip(options);
 
     </script>
 

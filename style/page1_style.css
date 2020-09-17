@@ -89,6 +89,7 @@
     width: 100%;
     margin: 42px 0 47px;
     overflow-y: auto;
+    border-radius: 6px;
 }
 
 .slider .slide {
