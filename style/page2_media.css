@@ -64,13 +64,13 @@
     }
 
     .column4 {
-        width: 24.1%;
+        width: 14.1%;
         padding: 6px 0;
         padding-left: 33px;
     }
 
     .column5 {
-        width: 30.6%;
+        width: 28.6%;
         text-align: center;
         padding: 6px 0;
         justify-content: center;
@@ -192,6 +192,10 @@
     .yellowBtn {
         margin: 42px 0 0 -7px;
     }
+    .tableTickets .row {
+    width: 355%;
+    justify-content: flex-start;
+}
 
 }
 
