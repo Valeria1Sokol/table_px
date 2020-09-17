@@ -1,3 +1,10 @@
+@media all and (max-width:1560px) {
+    .tableTickets .row {
+        width: 140%;
+        justify-content: flex-start;
+    }
+}
+
 @media all and (max-width:1460px) {
     .tickets .line:last-of-type form:first-of-type {
         width: 100%;
@@ -6,6 +13,94 @@
     .tickets textarea,
     .tickets .line .settingsBox {
         width: 100%;
+    }
+
+    .tickets .line .clm1 {
+        width: 100%;
+    }
+
+    .tickets .line .dateBox {
+        width: 48%;
+        justify-content: space-between;
+    }
+
+    .tickets .line .dateBox .inputsRow {
+        width: 100%;
+    }
+
+    .tickets .line:last-of-type .inputsRow {
+        width: 100%;
+    }
+
+    .tickets .line .settingsBox div,
+    .tickets .line .minMax {
+        width: 40%;
+    }
+
+    .tickets .line .settingsBox div div {
+        width: 100%;
+    }
+
+    .yellowBtn {
+        margin: 42px 0 0 auto;
+    }
+
+    .tickets .line:nth-of-type(3) .inputsRow {
+        width: 48%;
+    }
+
+    .tickets .template,
+    .tickets .groep,
+    .tickets .text {
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width:1024px) {
+    .tableTickets .row {
+        width: 240%;
+        justify-content: flex-start;
+    }
+
+    .column4 {
+        width: 24.1%;
+        padding: 6px 0;
+        padding-left: 33px;
+    }
+
+    .column5 {
+        width: 30.6%;
+        text-align: center;
+        padding: 6px 0;
+        justify-content: center;
+    }
+
+    .tickets .name {
+        width: 450px;
+    }
+
+    .tickets .line .dateBox {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .tickets .line .dateBox .inputsRow:first-of-type {
+        width: 80%;
+    }
+
+    .tickets .line .dateBox .inputsRow:last-of-type {
+        width: 20%;
+    }
+
+    .tickets .calendar,
+    .tickets .time {
+        width: 100%;
+    }
+
+    .tickets .calendar {
+        background: #fff url(../img/calendar.png) 93% 50% no-repeat;
+        background-size: 5%;
     }
 }
 
@@ -34,6 +129,20 @@
     }
 }
 
+@media all and (max-width: 600px) {
+    .tickets .name {
+        width: 350px;
+    }
+
+    .tickets .status {
+        width: 100%;
+    }
+
+    .tickets .minMax input {
+        width: 98px;
+    }
+}
+
 @media all and (max-width:500px) {
 
 
@@ -48,6 +157,40 @@
 
     .modalBox .content {
         padding: 36px 20px;
+    }
+
+    .tickets .name {
+        width: 100%;
+    }
+
+    .inputsRow,
+    .tickets .aantal,
+    .tickets .prijs input {
+        width: 100%;
+    }
+
+    .tickets .line:nth-of-type(3) .inputsRow {
+        width: 45%;
+    }
+
+    .tickets .line:nth-of-type(3) .inputsRow {
+        width: 100%;
+    }
+
+    .tickets .line .minMax {
+        width: 100%;
+    }
+
+    .tickets .minMax input {
+        width: 60%;
+    }
+
+    .tickets .line .settingsBox div {
+        width: 80%;
+    }
+
+    .yellowBtn {
+        margin: 42px 0 0 -7px;
     }
 
 }
@@ -75,12 +218,13 @@
     }
 
     .yellowBtn {
-        width: 110px;
+        width: 128px;
         padding: 0 9px;
         font-size: 14px;
     }
 
-    .tickets .calendar {
-        width: 162px;
+    .tickets .line .settingsBox div {
+        width: 100%;
     }
+
 }

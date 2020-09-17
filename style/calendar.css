@@ -81,6 +81,7 @@ span.flatpickr-weekday:nth-of-type(7) {
     color: #808080;
     font-size: 15px;
     font-weight: 400;
+    line-height: 20px;
 }
 
 .flatpickr-current-month .flatpickr-monthDropdown-months {
@@ -243,7 +244,7 @@ span.flatpickr-weekday:nth-of-type(7) {
 }
 
 .flatpickr-innerContainer {
-    padding: 0 10px;
+    padding: 0 10px 10px;
 }
 
 .numInputWrapper span.arrowDown {

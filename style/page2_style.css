@@ -7,6 +7,10 @@ form {
     background-color: white;
 }
 
+.menu li:nth-of-type(3):hover {
+    background-color: white;
+}
+
 .menu li:nth-of-type(3) .title {
     color: #193E58;
 }
@@ -31,8 +35,6 @@ form {
     color: #FFFFFF !important;
 }
 
-
-
 .whiteBtn {
     color: #193E58;
     background-color: #F5F5F5;
@@ -51,7 +53,7 @@ form {
 
 .tabsBox .tabsLine {
     width: 1000px;
-    overflow-x: scroll;
+    /*    overflow-x: scroll;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -63,7 +65,8 @@ form {
 
 .tabsBox .tabsLine:last-of-type {
     width: 800px;
-    box-shadow: 0px 3px 18px #52575D19;
+    box-shadow: 0px 3px 6px #52575D19;
+    margin: 0 0 57px;
 }
 
 .tabsBox .tabsLine:first-of-type .tab:first-of-type {
@@ -76,13 +79,6 @@ form {
 
 .tabsBox .tabsLine .tab:last-of-type {
     border-radius: 0 6px 6px 0;
-}
-
-.scroll {
-    width: 100%;
-    max-width: 1508px;
-    display: contents;
-    overflow-x: auto;
 }
 
 .tabsBox .tab {
@@ -100,7 +96,8 @@ form {
 
 .tabsBox .tabsLine:last-of-type .tab {
     font-size: 14px;
-    height: 50px
+    height: 50px;
+    box-shadow: 0px 3px 6px #52575D19;
 }
 
 .tabsBox .tabsLine:first-of-type .tab:first-of-type p {
@@ -145,7 +142,6 @@ form {
     border-bottom: 2px solid rgba(0, 0, 0, 0.08);
     border-left: 2px solid rgba(0, 0, 0, 0.08);
     border-right: 2px solid rgba(0, 0, 0, 0.08);
-    margin-top: 57px;
     margin-bottom: 10px;
 }
 
@@ -225,11 +221,27 @@ select {
     padding: 0 20px;
     border: 2px solid rgba(0, 0, 0, 0.08);
     border-radius: 4px;
+    color: #808080;
+    font-size: 12px;
+}
+
+input {
+    /*    padding: 0 20px 4px;*/
+}
+
+input:active,
+select :active,
+input:focus,
+select:focus,
+textarea:active,
+textarea:focus {
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    outline: none;
 }
 
 select {
     background-image: url(../img/arrow-down.png);
-    background-position: 97% center;
+    background-position: 91% center;
     background-repeat: no-repeat;
     background-size: 4%;
     -webkit-box-sizing: border-box;
@@ -253,8 +265,14 @@ select {
     opacity: 0;
 }
 
+.inputsRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .tickets .line .clm1 {
-    display: contents;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
@@ -285,7 +303,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     margin: 0;
     color: #808080;
@@ -294,6 +312,7 @@ select {
 input::placeholder {
     color: #808080;
     font-size: 12px;
+    padding: 0 0 30px;
 }
 
 .tickets .line:last-of-type {
@@ -324,16 +343,17 @@ input::placeholder {
     width: 89px;
     border-left: none;
     border-radius: 0 4px 4px 0;
+    text-align: center;
 }
 
 .tickets .template {
     width: 336px;
-    background-position: 91% center;
     background-size: 3%;
 }
 
 .tickets .status {
     width: 281px;
+    background-position: 89% center;
 }
 
 .tickets .groep {
@@ -358,6 +378,7 @@ input::placeholder {
     height: 198px;
     border: 2px solid rgba(0, 0, 0, 0.08);
     padding: 15px 20px;
+    color: #808080;
 }
 
 .tickets .line .settingsBox {
@@ -481,7 +502,7 @@ select option {
     margin-right: 0;
     margin-left: 0;
     overflow-x: auto;
-    width: 1508px;
+    width: 100%;
 
 }
 
@@ -565,14 +586,14 @@ select option {
 }
 
 .column1 {
-    width: 251px
+    width: 16.6%;
 }
 
 .column2,
 .column3,
 .column6,
 .column7 {
-    width: 128px;
+    width: 8.5%;
     height: 100%;
     padding: 6px 0;
 }
@@ -582,20 +603,20 @@ select option {
 }
 
 .column4 {
-    width: 258px;
+    width: 17.1%;
     padding: 6px 0;
     padding-left: 33px;
 }
 
 .column5 {
-    width: 386px;
+    width: 25.6%;
     text-align: center;
     padding: 6px 0;
     justify-content: center;
 }
 
 .column8 {
-    width: 95px;
+    width: 6.3%;
     padding: 6px 0;
     justify-content: center;
     align-items: center;
@@ -604,7 +625,7 @@ select option {
 
 .column8 img {
     cursor: pointer;
-    width: 0.73vw;
+    width: 15px;
 }
 
 .column2 p,
@@ -770,6 +791,7 @@ select option {
     padding: 15px 20px;
     border: 2px solid rgba(0, 0, 0, 0.08);
     border-radius: 4px;
+    color: #808080;
 }
 
 .modalBox .minMax {
@@ -818,6 +840,7 @@ select option {
     cursor: pointer;
     border: none;
     border-radius: 6px;
+    margin-top: 58px;
 }
 
 .modal {
@@ -850,7 +873,7 @@ select option {
 }
 
 .tooltipIcon {
-    background-image: url(../img/info-circle1.png);
+    background-image: url(../img/info-icon.png);
     background-position: center;
     background-size: cover;
     width: 10.8px;
