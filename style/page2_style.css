@@ -1,0 +1,835 @@
+form {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.menu li:nth-of-type(3) {
+    background-color: white;
+}
+
+.menu li:nth-of-type(3) .title {
+    color: #193E58;
+}
+
+.btn {
+    width: 178px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.68px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.blueBtn {
+    background: #193E58 0% 0% no-repeat padding-box;
+    color: #FFFFFF !important;
+}
+
+
+
+.whiteBtn {
+    color: #193E58;
+    background-color: #F5F5F5;
+}
+
+.tabsBox {
+    /*    max-width: 1000px;*/
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 33px;
+}
+
+.tabsBox .tabsLine {
+    width: 1000px;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tabsBox .tabsLine:last-of-type {
+    width: 800px;
+    box-shadow: 0px 3px 18px #52575D19;
+}
+
+.tabsBox .tabsLine:first-of-type .tab:first-of-type {
+    border-radius: 6px 0 0;
+}
+
+.tabsBox .tabsLine:last-of-type .tab:first-of-type {
+    border-radius: 0 0 0 6px;
+}
+
+.tabsBox .tabsLine .tab:last-of-type {
+    border-radius: 0 6px 6px 0;
+}
+
+.scroll {
+    width: 100%;
+    max-width: 1508px;
+    display: contents;
+    overflow-x: auto;
+}
+
+.tabsBox .tab {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #193E58;
+    cursor: pointer;
+}
+
+.tabsBox .tabsLine:last-of-type .tab {
+    font-size: 14px;
+    height: 50px
+}
+
+.tabsBox .tabsLine:first-of-type .tab:first-of-type p {
+    border: none;
+}
+
+.tabsBox .tabActive {
+    background-color: #193E58;
+    color: white;
+    width: 201px;
+}
+
+.tabsBox p {
+    margin: 0;
+    padding: 6px 0;
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.tabsBox p img {
+    width: 12px;
+    margin: 0 5px 0 0;
+}
+
+.tabActive p {
+    border-right: 1px solid #F1F1F1;
+}
+
+.tabActive:nth-of-type(2) p,
+.tab:last-of-type p {
+    border: none;
+}
+
+.tickets {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.32vw;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    border-left: 2px solid rgba(0, 0, 0, 0.08);
+    border-right: 2px solid rgba(0, 0, 0, 0.08);
+    margin-top: 57px;
+    margin-bottom: 10px;
+}
+
+.tickets .rowHead {
+    color: white;
+    background-color: #193E58;
+    box-shadow: 0px 3px 6px #52575D19;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    height: 45px;
+    padding: 0 36px;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.tickets .content {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px;
+    color: #4D4D4D;
+    font-weight: 500;
+    border-radius: 0 0 6px 6px;
+    padding: 26px 36px 35px;
+}
+
+.tickets .content span {
+    font-size: 14px;
+    position: relative;
+    top: -6px;
+    margin-left: 2px;
+}
+
+.tickets .content label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tickets .line {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    /*    margin: 0 0 22px;*/
+}
+
+.tickets input,
+.tickets .prijs p,
+.tickets .template,
+.tickets .status {
+    margin: 0 0 22px;
+}
+
+.tickets .line .dateBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.tickets .line .minMax {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+
+input,
+select {
+    height: 50px;
+    padding: 0 20px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+select {
+    background-image: url(../img/arrow-down.png);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    background-size: 4%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+[type="date"] {
+    background: #fff url(../img/calendar.png) 87% 50% no-repeat;
+    background-size: 10%;
+}
+
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.tickets .line .clm1 {
+    display: contents;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 700px;
+}
+
+.tickets .line .prijs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.prijs input::placeholder {
+    text-align: center;
+    font-size: 12px;
+}
+
+.prijs p {
+    height: 50px;
+    width: 50px;
+    border-left: 2px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px 0 0 4px;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #808080;
+}
+
+input::placeholder {
+    color: #808080;
+    font-size: 12px;
+}
+
+.tickets .line:last-of-type {
+    align-items: flex-start;
+    margin: 0;
+}
+
+.tickets .name {
+    width: 578px;
+}
+
+.tickets .aantal {
+    width: 93px;
+    text-align: center;
+}
+
+.tickets .prijs input {
+    width: 133px;
+    border-radius: 0 4px 4px 0;
+}
+
+.tickets .calendar {
+    width: 247px;
+    border-radius: 4px 0 0 4px;
+}
+
+.tickets .time {
+    width: 89px;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.tickets .template {
+    width: 336px;
+    background-position: 91% center;
+    background-size: 3%;
+}
+
+.tickets .status {
+    width: 281px;
+}
+
+.tickets .groep {
+    width: 336px;
+}
+
+.tickets .minMax input {
+    width: 113px;
+    text-align: center;
+}
+
+.tickets .minMax input:first-of-type {
+    margin: 0 30px 0 0;
+}
+
+.tickets .text {
+    width: 417px;
+}
+
+.tickets textarea {
+    width: 968px;
+    height: 198px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    padding: 15px 20px;
+}
+
+.tickets .line .settingsBox {
+    width: 417px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 0 0 0;
+    font-weight: 400;
+}
+
+.tickets .line .settingsBox label {
+    margin: 0;
+}
+
+.tickets .line .settingsBox p {
+    font-size: 12px;
+    font-weight: 100;
+    margin: 0 0 21px;
+}
+
+.tickets input[type="checkbox"] {
+    position: relative;
+    width: 45px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: #DFDEED;
+    outline: none;
+    border-radius: 14px;
+    transition: 0.5s;
+    margin: 6px 0 27px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.tickets input:checked[type="checkbox"] {
+    background: #F0B52D;
+}
+
+.tickets input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(105, 105, 144, 0.5);
+    transition: 0.5s;
+}
+
+.tickets input:checked[type="checkbox"]:before {
+    left: 23px;
+}
+
+select {
+    display: block;
+    color: #808080;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none !important;
+}
+
+select option {
+    font-weight: normal;
+}
+
+
+.tableTickets {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    overflow: hidden;
+}
+
+.vol {
+    margin: 37px 0 37px auto;
+    border-radius: 6px;
+}
+
+#sortablelist2,
+#sortablelist3 {
+    overflow-x: scroll;
+}
+
+.tableTickets .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    color: #4D4D4D;
+    margin-right: 0;
+    margin-left: 0;
+    overflow-x: auto;
+    width: 1508px;
+}
+
+.tableTickets .row2 {
+    background-color: white;
+}
+
+.tableTickets .row .column {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tableTickets .row .column1 {
+    border-left: 5px solid transparent;
+    padding: 6px 0 6px 1.56vw;
+}
+
+.tableTickets .row:hover .column1 {
+    border-left: 5px solid #F0B52D;
+}
+
+.row:hover {
+    background-color: #F0B52D0F;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.tableTickets .rowHead {
+    background: white;
+    box-shadow: 0px 3px 6px #52575D19;
+    color: #4D4D4D;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    border-radius: 6px 6px 0 0;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    margin: 41px 0 0;
+}
+
+.rowHead p,
+.row p {
+    margin: 0;
+}
+
+.row p {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+}
+
+.rowHead .column1 {
+    padding: 0 0 0 36px;
+}
+
+.rowHead a {
+    display: flex;
+    align-items: center;
+}
+
+.rowHead img {
+    width: 0.42vw;
+}
+
+.rowHead .bottom {
+    margin: 0.2vw 0 0;
+}
+
+.column1 {
+    width: 251px
+}
+
+.column2,
+.column3,
+.column6,
+.column7 {
+    width: 128px;
+    height: 100%;
+    padding: 6px 0;
+}
+
+.column3 {
+    justify-content: center;
+}
+
+.column4 {
+    width: 258px;
+    padding: 6px 0;
+    padding-left: 33px;
+}
+
+.column5 {
+    width: 386px;
+    text-align: center;
+    padding: 6px 0;
+    justify-content: center;
+}
+
+.column8 {
+    width: 95px;
+    padding: 6px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.column8 img {
+    cursor: pointer;
+    width: 0.73vw;
+}
+
+.column2 p,
+.column3 p,
+.column5 p,
+.column6 p,
+.column7 p,
+.column8 p {
+    justify-content: center;
+}
+
+.column8 p {
+    border: none;
+}
+
+.slide .row:hover .transpBtn {
+    background: #F0B52D;
+    border: 2px solid #F0B52D;
+    color: white;
+}
+
+.mobile {
+    display: none;
+}
+
+.modalBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.modalBox .rowHead {
+    color: white;
+    background-color: #193E58;
+    box-shadow: 0px 3px 6px #52575D19;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    height: 45px;
+    padding: 0 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px 6px 0 0;
+}
+
+.modalBox .content {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px;
+    color: #4D4D4D;
+    font-weight: 500;
+    padding: 36px;
+    align-items: flex-end;
+    border-radius: 6px;
+}
+
+.modalBox .content span {
+    font-size: 14px;
+    position: relative;
+    top: -6px;
+    margin-left: 2px;
+}
+
+.modal-dialog {
+
+    max-width: 929px;
+}
+
+.close {
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.close:hover {
+    color: white;
+}
+
+.close:active,
+.close:focus {
+    outline: none;
+    border: none;
+}
+
+.modalBox .line {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+
+.modalBox .line .prijs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modalBox .longText {
+    width: 31.4vw;
+}
+
+.modalBox .aantal {
+    width: 132px;
+    text-align: center;
+}
+
+.modalBox .line .date {
+    width: 413px;
+}
+
+.modalBox .line .date div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.modalBox .line .date .calendar {
+    background: #fff url(../img/calendar.png) 93% 50% no-repeat;
+    background-size: 4%;
+    width: 317px;
+    border-left: 2px solid rgba(0, 0, 0, 0.08);
+    border-right: none;
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px 0 0 4px;
+}
+
+.modalBox .line .date .time {
+    width: 97px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0 4px 4px 0;
+}
+
+.modalBox input,
+.modalBox .prijs p,
+.modalBox select {
+    margin: 0 0 27px;
+}
+
+.modalBox select {
+    width: 17vw;
+    background-size: 3%;
+    background-position: 92% center;
+}
+
+.modalBox .line:last-of-type div {
+    width: 100%;
+}
+
+.modalBox textarea {
+    width: 100%;
+    height: 174px;
+    padding: 15px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.modalBox .minMax {
+    display: flex;
+    flex-direction: row;
+}
+
+.modalBox .minMax input {
+    width: 110px;
+    text-align: center;
+}
+
+.modalBox .minMax input:first-of-type {
+    margin: 0 30px 0 0;
+}
+
+.modalBox .text {
+    width: 100%;
+}
+
+.modalBox .text input {
+    width: 100%;
+}
+
+.modalBox .middleText {
+    width: 413px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalBox .prijs input {
+    width: 143px;
+    border-radius: 0 4px 4px 0;
+}
+
+.modalBox .btn {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.68px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.modal {
+    border: none;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 6px;
+}
+
+.yellowBtn {
+    background: #F0B52D 0% 0% no-repeat padding-box;
+    color: #FFFFFF !important;
+    border: none;
+    width: 173px;
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+    border-radius: 6px;
+}
+
+.yellowBtn span {
+    font-size: 28px !important;
+    font-weight: 400;
+    top: 0!important;
+    margin: 0;
+}

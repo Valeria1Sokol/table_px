@@ -3,9 +3,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/main_style.css">
+<link rel="stylesheet" href="style/page1_style.css">
 <link rel="stylesheet" href="style/popUp.css">
-<link rel="stylesheet" href="style/media.css">
+<link rel="stylesheet" href="style/page1_media.css">
 <link rel="stylesheet" href="style/humburgerMenu.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -32,7 +33,7 @@
                     <li><a class="title">
                             <p><img alt="" src="img/icon1.png"></p>Dashboard
                         </a></li>
-                    <li><a class="title">
+                    <li><a class="title" href="Evenementen.html">
                             <p><img alt="" src="img/icon2.png"></p>Evenementen
                         </a></li>
                     <li><a class="title">
@@ -551,7 +552,8 @@
             </div>
         </section>
     </div>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/slider.js"></script>
     <script>
         function myFunction() {
 
@@ -560,9 +562,9 @@
                 $('body').css({
                     overflowY: 'hidden'
                 })
-//                alert('y');
+                //                alert('y');
             } else {
-                 $('body').css({
+                $('body').css({
                     overflowY: 'scroll'
                 })
             }

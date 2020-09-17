@@ -1,0 +1,86 @@
+@media all and (max-width:1460px) {
+    .tickets .line:last-of-type form:first-of-type {
+        width: 100%;
+    }
+
+    .tickets textarea,
+    .tickets .line .settingsBox {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:800px) {
+
+    .modalBox .middleText,
+    .modalBox .line form {
+        width: 100%;
+    }
+
+    .modalBox .middleText {
+        flex-wrap: wrap;
+    }
+
+    .modal-dialog {
+        max-width: 500px;
+        margin: 20px auto;
+    }
+
+    .modalBox .line .date {
+        width: 100%;
+    }
+
+    .modalBox .line .date .calendar {
+        width: 340px;
+    }
+}
+
+@media all and (max-width:500px) {
+
+
+    .modal-dialog {
+        max-width: 350px;
+        margin: 20px auto;
+    }
+
+    .modalBox .line .date .calendar {
+        width: 216px;
+    }
+
+    .modalBox .content {
+        padding: 36px 20px;
+    }
+
+}
+
+@media all and (max-width:320px) {
+
+    .modalBox .content,
+    .tickets .content {
+        padding: 16px 10px;
+    }
+
+    .tickets .name,
+    .tickets .status,
+    .tickets .template,
+    .tickets .groep,
+    .tickets .content form,
+    .tickets .text,
+    .tickets textarea,
+    .tickets .line .settingsBox {
+        width: 100%;
+    }
+
+    .tickets .line .settingsBox form {
+        width: auto;
+    }
+
+    .yellowBtn {
+        width: 110px;
+        padding: 0 9px;
+        font-size: 14px;
+    }
+
+    .tickets .calendar {
+        width: 162px;
+    }
+}

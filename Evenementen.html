@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="style/main_style.css">
+<link rel="stylesheet" href="style/page2_style.css">
+<link rel="stylesheet" href="style/popUp.css">
+<link rel="stylesheet" href="style/page2_media.css">
+<link rel="stylesheet" href="style/flatpickr.min.css">
+<link rel="stylesheet" href="style/calendar.css">
+<link rel="stylesheet" href="style/humburgerMenu.css">
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<title>Document</title>
+
+<body>
+    <div class="contentBox">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" onclick="myFunction()" />
+
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <div class="m-menu__overlay" id="closeAll"></div>
+
+            <section class="dashboard menu__box">
+                <ul class="menu">
+                    <li><a class="logo">
+                            <img alt="" src="img/logo.png">Ticketboom
+                        </a></li>
+                    <li><a class="title">
+                            <p><img alt="" src="img/icon1.png"></p>Dashboard
+                        </a></li>
+                    <li><a class="title" href="Evenementen.html">
+                            <p><img alt="" src="img/icon2Blue.png"></p>Evenementen
+                        </a></li>
+                    <li><a class="title">
+                            <p><img alt="" src="img/icon3.png"></p>Rapporten
+                        </a></li>
+                    <li class="hasSub">
+                        <div>
+                            <a class="title">
+                                <p>
+                                    <img alt="" src="img/icon4.png" class="icon4">
+                                    <img alt="" src="img/icon4W.png" class="icon4 iconWhite">
+                                </p>Bestellingen
+                            </a>
+                            <span class="fas fa-caret-down"></span>
+                        </div>
+
+                        <ul class="subMenu">
+                            <li><a href="index.html">Bestellingen 1</a></li>
+                            <li><a href="#">Bestellingen 2</a></li>
+                            <li><a href="#">Bestellingen 3</a></li>
+                            <li><a href="#">Bestellingen 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="title">
+                            <p><img alt="" src="img/icon5.png"></p>Scan centrum
+                        </a></li>
+                    <li><a class="title">
+                            <p><img alt="" src="img/icon6.png"></p>Kortingscodes
+                        </a></li>
+                    <li><a class="title">
+                            <p><img alt="" src="img/icon7.png"></p>Layouts
+                        </a></li>
+                    <li><a class="title">
+                            <p><img alt="" src="img/icon8.png"></p>Instellingen
+                        </a></li>
+                </ul>
+            </section>
+        </div>
+        <section class="content">
+            <div class="widthBox">
+                <div class="boxWelcome">
+                    <div class="left">
+                        <p class="tittle">Welcome to Ticketboom</p>
+                    </div>
+
+                    <div class="right">
+                        <div class="searchBox popup dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <form class="dropdown" style="flex-direction: row">
+                                <input type="search" placeholder="Search">
+                                <a class="searchBtn push"></a>
+                            </form>
+                            <div class="popuptext dropdown-menu" id="myPopup3" aria-labelledby="dropdownMenuButton">
+                                <ul>
+                                    <li>Zoekresultaat 1</li>
+                                    <li>Zoekresultaat 2 hover</li>
+                                    <li>Zoekresultaat 3</li>
+                                    <li>Zoekresultaat 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-m">
+                            <div class="notification popup dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img alt="" src="img/bell-icon.png">
+                                <div class="text">8</div>
+                                <div class="popuptext dropdown-menu" id="myPopup" aria-labelledby="dropdownMenuButton">
+                                    <ul>
+                                        <li>Dit is melding 1</li>
+                                        <li>Dit is melding 1</li>
+                                        <li>Dit is melding 1</li>
+                                        <li>Dit is melding 1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="name">Jeffrey Davis</p>
+                            <div class="userBox popup">
+                                <img alt="" src="img/avatar-icon.png" class="user dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img alt="" src="img/arrow-icon.png" class="arrow dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                <div class="popuptext dropdown-menu" id="myPopup2" aria-labelledby="dropdownMenuButton">
+                                    <ul>
+                                        <li>Dashboard</li>
+                                        <li>Instellingen</li>
+                                        <li>Meldingen</li>
+                                        <li>Uitloggen</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="widthBox">
+                <div class="tabsBox">
+                    <div class="tabsLine">
+                        <div class="tab tabActive">
+                            <p>Basis</p>
+                        </div>
+                        <div class="tab">
+                            <p>Layouts</p>
+                        </div>
+                        <div class="tab">
+                            <p>Programma</p>
+                        </div>
+                        <div class="tab">
+                            <p>Reserveringen</p>
+                        </div>
+                        <div class="tab">
+                            <p>Gastenlijst</p>
+                        </div>
+                    </div>
+                    <div class="tabsLine">
+                        <div class="tab tabActive">
+                            <p><img src="img/check.png" alt="">Informatie</p>
+                        </div>
+                        <div class="tab tabActive">
+                            <p>Tickets</p>
+                        </div>
+                        <div class="tab">
+                            <p>Tijdsloten</p>
+                        </div>
+                        <div class="tab">
+                            <p>Betaalopties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widthBox">
+                <div class="tickets">
+                    <div class="rowHead">
+                        <p>Tickets</p>
+                    </div>
+                    <div class="content">
+                        <div class="line">
+                            <div class="clm1">
+                                <form>
+                                    <label>Ticket naam<span>*</span></label>
+                                    <input type="text" class="name" placeholder="Ticket naam...">
+                                </form>
+
+                                <form>
+                                    <label>Aantal<span>*</span></label>
+                                    <input type="text" placeholder="125" class="aantal">
+                                </form>
+                            </div>
+                            <div class="clm1">
+                                <form>
+                                    <label>Prijs<span>*</span></label>
+                                    <div class="prijs">
+                                        <p class="euro">€</p>
+                                        <input type="text" placeholder="2,00">
+                                    </div>
+                                </form>
+                                <form>
+                                    <label>Administratiekosten</label>
+                                    <div class="prijs">
+                                        <p class="euro">€</p>
+                                        <input type="text" placeholder="2,00">
+                                    </div>
+                                </form>
+                                <form>
+                                    <label>Status<span>*</span></label>
+                                    <select class="status">
+                                        <option style="color: #808080">Online</option>
+                                        <option>Offline</option>
+                                    </select>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="clm1">
+                                <div class="dateBox">
+                                    <form style="position: relative;">
+                                        <label>Verkoop vanaf<span>*</span></label>
+                                        <input type="text" class="calendar" placeholder="" data-input>
+                                    </form>
+                                    <form>
+                                        <label></label>
+                                        <input type="text" class="time" placeholder="" data-input>
+                                    </form>
+                                </div>
+                                <div class="dateBox">
+                                    <form style="position: relative;">
+                                        <label>Verkoop tot<span>*</span></label>
+                                        <input type="text" class="calendar" placeholder="" data-input>
+                                    </form>
+                                    <form>
+                                        <label></label>
+                                        <input type="text" class="time" placeholder="" data-input>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="clm1">
+                                <div class="dateBox">
+                                    <form style="position: relative;">
+                                        <label>Ticket geldig vanaf<span>*</span></label>
+                                        <input type="text" class="calendar" placeholder="" data-input>
+                                    </form>
+                                    <form>
+                                        <label></label>
+                                        <input type="text" class="time" placeholder="" data-input>
+                                    </form>
+                                </div>
+                                <div class="dateBox">
+                                    <form style="position: relative;">
+                                        <label>Ticket geldig tot<span>*</span></label>
+                                        <input type="text" class="calendar" placeholder="" data-input>
+                                    </form>
+                                    <form>
+                                        <label></label>
+                                        <input type="text" class="time" placeholder="" data-input>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="clm1">
+                                <form>
+                                    <label>E-ticket template<span>*</span></label>
+                                    <select class="template">
+                                        <option>Template 1</option>
+                                        <option>Template 1</option>
+                                    </select>
+                                </form>
+                                <form>
+                                    <label>Groepsnaam</label>
+                                    <input type="text" placeholder="Groepsnaam..." class="groep">
+                                </form>
+                            </div>
+                            <div class="clm1">
+                                <form>
+                                    <label>Tickets per bestelling</label>
+                                    <div class="minMax">
+                                        <input type="text" placeholder="Min...">
+                                        <input type="text" placeholder="Max...">
+                                    </div>
+                                </form>
+                                <form>
+                                    <label>Uitverkocht tekst</label>
+                                    <input type="text" placeholder="Uitverkocht tekst..." class="text">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <form>
+                                <label>Additionele informatie</label>
+                                <textarea placeholder="Additionele informatie"></textarea>
+                            </form>
+                            <div class="settingsBox">
+                                <div>
+                                    <div>
+                                        <label>Eerste scan</label>
+                                        <p>Additionele informaatie</p>
+                                    </div>
+                                    <div>
+                                        <label>Type ticket is uitgescand</label>
+                                        <p>Additionele informaatie</p>
+                                    </div>
+                                </div>
+                                <form>
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                    <a class="btn yellowBtn  push">
+                                        <span>+</span>
+                                        Toevoegen</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widthBox">
+                <div class="tableTickets">
+                    <div id="sortablelist" data-id="1">
+                        <div class="">
+                            <div class="rowHead">
+                                <p>Saturday Tickets</p>
+                            </div>
+                            <div id="sortablelist2" data-id="2">
+                                <div class="row" data-toggle="modal" data-target="#exampleModal" data-id="2">
+                                    <div class="column column1">
+                                        <p>Early Bird</p>
+                                    </div>
+                                    <div class="column column2">
+                                        <p>150 stuks</p>
+                                    </div>
+                                    <div class="column column3">
+                                        <p>€ 29,99</p>
+                                    </div>
+                                    <div class="column column4">
+                                        <p>Template 1</p>
+                                    </div>
+                                    <div class="column column5">
+                                        <p>02 Mei 2016 14:00 - 04 Mei 2016 18:00</p>
+                                    </div>
+                                    <div class="colunm column6">
+                                        <p>2 - 6</p>
+                                    </div>
+                                    <div class="colunm column7">
+                                        <p>Online</p>
+                                    </div>
+                                    <div class="colunm column8">
+                                        <p><img src="img/delete-icon.png" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="row" data-toggle="modal" data-target="#exampleModal" data-id="3">
+                                    <div class="column column1">
+                                        <p>Normal Bird</p>
+                                    </div>
+                                    <div class="column column2">
+                                        <p>400 stuks</p>
+                                    </div>
+                                    <div class="column column3">
+                                        <p>€ 39,99</p>
+                                    </div>
+                                    <div class="column column4">
+                                        <p>Template Normal Bird</p>
+                                    </div>
+                                    <div class="column column5">
+                                        <p>02 Mei 2016 14:00 - 04 Mei 2016 18:00</p>
+                                    </div>
+                                    <div class="colunm column6">
+                                        <p>2 - 6</p>
+                                    </div>
+                                    <div class="colunm column7">
+                                        <p>Offline</p>
+                                    </div>
+                                    <div class="colunm column8">
+                                        <p><img src="img/delete-icon.png" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="row" data-toggle="modal" data-target="#exampleModal" data-id="4">
+                                    <div class="column column1">
+                                        <p>Late Bird</p>
+                                    </div>
+                                    <div class="column column2">
+                                        <p>150 stuks</p>
+                                    </div>
+                                    <div class="column column3">
+                                        <p>€ 29,99</p>
+                                    </div>
+                                    <div class="column column4">
+                                        <p>Template 1</p>
+                                    </div>
+                                    <div class="column column5">
+                                        <p>02 Mei 2016 14:00 - 04 Mei 2016 18:00</p>
+                                    </div>
+                                    <div class="colunm column6">
+                                        <p>2 - 6</p>
+                                    </div>
+                                    <div class="colunm column7">
+                                        <p>Online</p>
+                                    </div>
+                                    <div class="colunm column8">
+                                        <p><img src="img/delete-icon.png" alt=""></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="">
+                            <div class="rowHead">
+                                <p>Ungrouped</p>
+                            </div>
+                            <div id="sortablelist3" data-id="3">
+                                <div class="row" data-toggle="modal" data-target="#exampleModal" data-id="5">
+                                    <div class="column column1">
+                                        <p>Late Bird</p>
+                                    </div>
+                                    <div class="column column2">
+                                        <p>150 stuks</p>
+                                    </div>
+                                    <div class="column column3">
+                                        <p>€ 29,99</p>
+                                    </div>
+                                    <div class="column column4">
+                                        <p>Template 1</p>
+                                    </div>
+                                    <div class="column column5">
+                                        <p>02 Mei 2016 14:00 - 04 Mei 2016 18:00</p>
+                                    </div>
+                                    <div class="colunm column6">
+                                        <p>2 - 6</p>
+                                    </div>
+                                    <div class="colunm column7">
+                                        <p>Online</p>
+                                    </div>
+                                    <div class="colunm column8">
+                                        <p><img src="img/delete-icon.png" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="row" data-toggle="modal" data-target="#exampleModal" data-id="6">
+                                    <div class="column column1">
+                                        <p>Late Bird</p>
+                                    </div>
+                                    <div class="column column2">
+                                        <p>150 stuks</p>
+                                    </div>
+                                    <div class="column column3">
+                                        <p>€ 29,99</p>
+                                    </div>
+                                    <div class="column column4">
+                                        <p>Template 1</p>
+                                    </div>
+                                    <div class="column column5">
+                                        <p>02 Mei 2016 14:00 - 04 Mei 2016 18:00</p>
+                                    </div>
+                                    <div class="colunm column6">
+                                        <p>2 - 6</p>
+                                    </div>
+                                    <div class="colunm column7">
+                                        <p>Online</p>
+                                    </div>
+                                    <div class="colunm column8">
+                                        <p><img src="img/delete-icon.png" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="row" data-toggle="modal" data-target="#exampleModal" data-id="7">
+                                    <div class="column column1">
+                                        <p>Late Bird</p>
+                                    </div>
+                                    <div class="column column2">
+                                        <p>150 stuks</p>
+                                    </div>
+                                    <div class="column column3">
+                                        <p>€ 29,99</p>
+                                    </div>
+                                    <div class="column column4">
+                                        <p>Template 1</p>
+                                    </div>
+                                    <div class="column column5">
+                                        <p>02 Mei 2016 14:00 - 04 Mei 2016 18:00</p>
+                                    </div>
+                                    <div class="colunm column6">
+                                        <p>2 - 6</p>
+                                    </div>
+                                    <div class="colunm column7">
+                                        <p>Online</p>
+                                    </div>
+                                    <div class="colunm column8">
+                                        <p><img src="img/delete-icon.png" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="row" data-toggle="modal" data-target="#exampleModal" data-id="8">
+                                    <div class="column column1">
+                                        <p>Late Bird</p>
+                                    </div>
+                                    <div class="column column2">
+                                        <p>150 stuks</p>
+                                    </div>
+                                    <div class="column column3">
+                                        <p>€ 29,99</p>
+                                    </div>
+                                    <div class="column column4">
+                                        <p>Template 1</p>
+                                    </div>
+                                    <div class="column column5">
+                                        <p>02 Mei 2016 14:00 - 04 Mei 2016 18:00</p>
+                                    </div>
+                                    <div class="colunm column6">
+                                        <p>2 - 6</p>
+                                    </div>
+                                    <div class="colunm column7">
+                                        <p>Online</p>
+                                    </div>
+                                    <div class="colunm column8">
+                                        <p><img src="img/delete-icon.png" alt=""></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn blueBtn push vol">Volgende</a>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modalBox">
+                            <div class="rowHead">
+                                <p>Wijzig ticket</p>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="content">
+                                <div class="line">
+                                    <form>
+                                        <label>Ticket naam<span>*</span></label>
+                                        <input type="text" placeholder="Early Bird" class="middleText">
+                                    </form>
+                                    <form>
+                                        <label>Groepsnaam</label>
+                                        <input type="text" placeholder="Groepsnaam..." class="middleText">
+                                    </form>
+                                </div>
+                                <div class="line">
+                                    <div class="middleText">
+                                        <form>
+                                            <label>Aantal<span>*</span></label>
+                                            <input type="text" placeholder="35" class="aantal">
+                                        </form>
+                                        <form>
+                                            <label>Tickets per bestelling</label>
+                                            <div class="minMax">
+                                                <input type="text" placeholder="Min...">
+                                                <input type="text" placeholder="Max...">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="middleText">
+                                        <form>
+                                            <label>Prijs<span>*</span></label>
+                                            <div class="prijs">
+                                                <p class="euro">€</p>
+                                                <input type="text" placeholder="2,00">
+                                            </div>
+                                        </form>
+                                        <form>
+                                            <label>Administratiekosten</label>
+                                            <div class="prijs">
+                                                <p class="euro">€</p>
+                                                <input type="text" placeholder="2,00">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <!--
+                                    <div>
+                                        <label>Uitverkocht tekst</label>
+                                        <input type="text" placeholder="Uitverkocht tekst" class="longText">
+                                    </div>
+-->
+                                </div>
+                                <div class="line">
+                                    <form class="date">
+                                        <label>Verkoop vanaf<span>*</span></label>
+                                        <div>
+                                            <input type="text" class="calendar" placeholder="" data-input>
+                                            <input type="text" class="time" placeholder="" data-input>
+                                        </div>
+                                    </form>
+                                    <form class="date">
+                                        <label>Verkoop tot<span>*</span></label>
+                                        <div>
+                                            <input type="text" class="calendar" placeholder="" data-input>
+                                            <input type="text" class="time" placeholder="" data-input>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="line">
+                                    <form class="date">
+                                        <label>Ticket geldig vanaf<span>*</span></label>
+                                        <div>
+                                            <input type="text" class="calendar" placeholder="" data-input>
+                                            <input type="text" class="time" placeholder="" data-input>
+                                        </div>
+                                    </form>
+                                    <form class="date">
+                                        <label>Ticket geldig tot<span>*</span></label>
+                                        <div>
+                                            <input type="text" class="calendar" placeholder="" data-input>
+                                            <input type="text" class="time" placeholder="" data-input>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--
+                                    
+-->
+
+
+                                <div class="line">
+
+                                    <form>
+                                        <label>E-Ticket template<span>*</span></label>
+                                        <select class="middleText">
+                                            <option>Template 1</option>
+                                            <option>Template 1</option>
+                                        </select>
+                                    </form>
+                                    <form>
+                                        <label>Status<span>*</span></label>
+                                        <select class="middleText">
+                                            <option>online</option>
+                                            <option>offline</option>
+                                        </select>
+                                    </form>
+
+                                </div>
+                                <div class="line">
+                                    <form class="text">
+                                        <label>Uitverkocht tekst</label>
+                                        <input type="text" placeholder="Uitverkocht tekst">
+                                    </form>
+                                </div>
+                                <div class="line">
+                                    <div>
+                                        <label>Additionele informatie</label>
+                                        <textarea placeholder="Additionele informatie"></textarea> </div>
+                                </div>
+                                <a class="btn blueBtn push">Opslaan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="script/script.js"></script>
+
+    <!--    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+
+    <script>
+        function myFunction() {
+
+            // If the checkbox is checked, display the output text
+            if (document.querySelector('#menu__toggle:checked') !== null) {
+                $('body').css({
+                    overflowY: 'hidden'
+                })
+            } else {
+                $('body').css({
+                    overflowY: 'scroll'
+                })
+            }
+        }
+
+    </script>
+    <script src="script/sortable.js"></script>
+    <script>
+        new Sortable(sortablelist, {
+            animation: 150,
+            ghostClass: 'blue-background-class'
+        });
+        new Sortable(sortablelist2, {
+            animation: 150,
+            ghostClass: 'blue-background-class'
+        });
+        new Sortable(sortablelist3, {
+            animation: 150,
+            ghostClass: 'blue-background-class'
+        });
+
+
+        var cal = flatpickr(".calendar", {
+            mode: "single",
+            altInput: true,
+            altFormat: "d F, Y ",
+            dateFormat: "d-m-y",
+            locale: {
+                firstDayOfWeek: 1
+            }
+        });
+
+        var time = flatpickr(".time", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+            time_24hr: true
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
