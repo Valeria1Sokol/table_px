@@ -89,7 +89,7 @@
     }
 
     .tickets .aantal {
-        width: 3.8vw;
+        width: 5vw;
     }
 
     .tickets .status {
@@ -116,13 +116,10 @@
     }
 }
 
-@media all and (max-width:1560px) {
-    /*
-    .tableTickets .row {
-        width: 140%;
-        justify-content: flex-start;
+@media all and (max-width:1440px) {
+    .tickets .name {
+        width: 25.6vw;
     }
-*/
 }
 
 @media all and (max-width:1439px) {
@@ -297,7 +294,7 @@
 */
 
     .tickets .name {
-        width: 450px;
+        /*        width: 450px;*/
     }
 
     .tickets .line .dateBox {
@@ -324,7 +321,7 @@
     }
 }
 
-@media all and (max-width:800px) {
+@media all and (max-width:900px) {
 
     .modalBox .middleText,
     .modalBox .line form {
@@ -346,6 +343,22 @@
 
     .modalBox .line .date .calendar {
         width: 340px;
+    }
+
+    .modalBox .inputsRow,
+    .modalBox .aantal,
+    .modalBox .prijs input {
+        width: 100%;
+    }
+
+    .modalBox .minMax input {
+        width: 48%;
+    }
+
+    .clm2 .inputsRow:first-of-type,
+    .clm2 .inputsRow,
+    .tickets .aantal {
+        width: 100%;
     }
 }
 
@@ -416,7 +429,17 @@
         justify-content: flex-start;
     }
 */
+    .modalBox .aantal {
+        width: 100%;
+    }
 
+    .modalBox .prijs input {
+        width: 100%;
+    }
+
+    .modalBox .minMax input {
+        width: 48%;
+    }
 }
 
 @media all and (max-width:425px) {

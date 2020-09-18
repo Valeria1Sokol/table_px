@@ -22,7 +22,7 @@
 }
 
 .menu li {
-    border-bottom: 1px solid #F5F5F547;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.28);
     width: 100%;
     display: flex;
     flex-direction: column;
