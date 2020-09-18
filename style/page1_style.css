@@ -41,7 +41,6 @@
     height: 100%;
     font-size: 12px;
     font-weight: bold;
-    /*    line-height: 26px;*/
     letter-spacing: 1.68px;
     text-decoration: none;
     display: flex;
@@ -370,23 +369,9 @@
         width: 140%;
     }
 
-    .slider .column1 {
-        /* width: 387px; */
-        /*        width: 20.7%;*/
-    }
-
-
     .slider .slide .row,
     .slider .rowHead {
         justify-content: flex-start;
-    }
-
-    .box {
-        /*
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-*/
     }
 
     .box .btnBox {
@@ -397,15 +382,6 @@
 @media all and (max-width:1024px) {
     .slider .slide {
         width: 140%;
-    }
-
-    .slider .column6 {
-        /*        width: 12.4%;*/
-    }
-
-    .slider .column2,
-    .slider .column3 {
-        /*        width: 15.1%;*/
     }
 }
 

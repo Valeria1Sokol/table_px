@@ -7,15 +7,17 @@
     }
 
     .tickets .line .clm1 {
-        width: 48.7%;
+        width: auto;
     }
 
     .tickets .name {
         width: 30.1vw;
+        margin-right: 30px;
     }
 
     .tickets .prijs input {
         width: 6.9vw;
+        margin-right: 30px;
     }
 
     .tickets .line .clm1 {
@@ -36,10 +38,20 @@
 
     .tickets .time {
         width: 4.5vw;
+        margin-right: 30px;
+    }
+
+    .tickets .line:nth-of-type(2) .clm1:last-of-type .dateBox:last-of-type .time {
+        margin-right: 0;
+    }
+
+    .tickets .minMax input {
+        margin-right: 30px;
     }
 
     .tickets .template {
         width: 17.4vw;
+        margin-right: 30px;
     }
 
     .tickets .groep {
@@ -55,8 +67,8 @@
     }
 
     .tickets .line .settingsBox {
-        width: 16.7vw;
-        margin-left: 1.6vw;
+        width: auto;
+        margin-left: 30px;
     }
 
     .tickets .line:nth-of-type(4) {
@@ -68,12 +80,12 @@
 @media all and (max-width:1600px) {
 
     .tickets .text {
-        width: 16.7vw;
+        width: 18.3vw;
     }
 
     .tickets .groep,
     .tickets .template {
-        width: 15.4vw;
+        width: 16.1vw;
     }
 
     .tickets .name {
@@ -90,6 +102,7 @@
 
     .tickets .aantal {
         width: 5vw;
+        margin-right: 30px;
     }
 
     .tickets .status {
@@ -97,10 +110,8 @@
     }
 
     .tickets .calendar {
-        width: 10.9vw;
+        width: 11.53vw;
     }
-
-
 
     .tickets .minMax input {
         width: 5.8vw;
@@ -118,7 +129,20 @@
 
 @media all and (max-width:1440px) {
     .tickets .name {
-        width: 25.6vw;
+        width: 23.6vw;
+    }
+
+    .tickets .calendar {
+        width: 10.53vw;
+    }
+
+    .tickets .text {
+        width: 16.3vw;
+    }
+
+    .tickets .groep,
+    .tickets .template {
+        width: 15.1vw;
     }
 }
 
@@ -134,7 +158,6 @@
         width: 417px;
         margin-left: 0;
     }
-
 
     .tickets .line:nth-of-type(4) {
         align-items: flex-start;
@@ -179,10 +202,6 @@
 
     .tickets .minMax input {
         width: 113px;
-    }
-
-    .tickets textarea {
-        /*        width: 968px;*/
     }
 
     .tickets .line .clm1 {
@@ -237,17 +256,48 @@
     .tickets .text {
         width: 100%;
     }
-
-
-
 }
 
-@media all and (max-width:1154px) {
-    .clm2 .inputsRow:first-of-type {
+@media all and (max-width:1280px) {
+    .tickets .aantal {
+        width: 135px;
+        margin-right: 0;
+    }
+
+    .tickets .name {
+        width: 631px;
+    }
+
+    .tickets .prijs input {
+        width: 177px;
+    }
+
+    .tickets .calendar {
+        width: 297px;
+    }
+
+    .tickets .line .minMax {
+        width: 100%;
+    }
+
+    .tickets .minMax input {
+        width: 50%;
+        margin-right: 0px;
+    }
+
+    .tickets .line .clm2 .inputsRow {
+        width: 20%;
+    }
+
+    .tickets .line .clm2 .inputsRow:first-of-type {
         width: 80%;
     }
 
     .tickets .name {
+        width: 94%;
+    }
+
+    .tickets .aantal {
         width: 100%;
     }
 }
@@ -273,28 +323,32 @@
         width: 100%;
     }
 
-    /*
-    .tableTickets .row {
-        width: 240%;
-        justify-content: flex-start;
+    .tickets .line .clm3 .inputsRow {
+        width: 50%;
     }
 
-    .column4 {
-        width: 14.1%;
-        padding: 6px 0;
-        padding-left: 33px;
+    .tickets .line .clm3 .inputsRow:first-of-type input {
+        width: 100%;
     }
 
-    .column5 {
-        width: 28.6%;
-        text-align: center;
-        padding: 6px 0;
-        justify-content: center;
+    .tickets .line .clm3 .inputsRow:first-of-type input {
+        width: 100%;
     }
-*/
 
-    .tickets .name {
-        /*        width: 450px;*/
+    .tickets .line .clm3 .inputsRow:last-of-type {
+        width: 100%;
+    }
+
+    .tickets .line .clm3 .prijs input {
+        margin-right: 15px;
+    }
+
+    .tickets .line .clm3 .admin p {
+        margin-left: 15px;
+    }
+
+    .tickets .line .clm3 .admin input {
+        margin-right: 0;
     }
 
     .tickets .line .dateBox {
@@ -377,8 +431,6 @@
 }
 
 @media all and (max-width:500px) {
-
-
     .modal-dialog {
         max-width: 350px;
         margin: 20px auto;
@@ -422,13 +474,6 @@
         width: 80%;
     }
 
-
-    /*
-    .tableTickets .row {
-        width: 355%;
-        justify-content: flex-start;
-    }
-*/
     .modalBox .aantal {
         width: 100%;
     }
@@ -457,8 +502,6 @@
     .tableTickets .row .column1 {
         width: 100%;
     }
-
-
 }
 
 @media all and (max-width:320px) {

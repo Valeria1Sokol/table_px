@@ -1,6 +1,5 @@
 .dashboard {
     width: 314px;
-    /*    height: 100vh;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -82,7 +81,6 @@
     cursor: pointer;
     text-decoration: none;
     display: flex;
-
 }
 
 .menu .hasSub div {
@@ -175,7 +173,6 @@
 
 @media all and (max-width:800px) {
     .menu {
-        /*        height: 663px;*/
         overflow-y: auto;
     }
 
@@ -258,7 +255,6 @@
         cursor: pointer;
         z-index: 11;
     }
-
 
     .menu__btn > span,
     .menu__btn > span::before,

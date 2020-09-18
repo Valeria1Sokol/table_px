@@ -17,28 +17,6 @@
         width: 250%;
     }
 
-    .slider .column1 {
-        /*        width: 15%;*/
-    }
-
-    .slider .column2,
-    .slider .column3 {
-        /*        width: 13%;*/
-    }
-
-    .slider .column4 {
-        /*        width: 10%;*/
-    }
-
-    .slider .column5 {
-        /*        width: 10%;*/
-    }
-
-    .slider .column6 {
-        /*        width: 30vw;*/
-    }
-
-
     .box input[type='search'] {
         width: 300px;
     }

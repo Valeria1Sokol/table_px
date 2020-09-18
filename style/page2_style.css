@@ -105,8 +105,7 @@ form {
 }
 
 .tabsBox .tabsLine:first-of-type .tab:first-of-type p {
-
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid rgba(245, 245, 245, 0.6);
     border-right: none;
     height: 100%;
     width: 90%;
@@ -135,7 +134,7 @@ form {
 }
 
 .tabActive p {
-    border-right: 1px solid #F1F1F1;
+    border-right: 1px solid rgba(245, 245, 245, 0.6);
 }
 
 .tabActive:nth-of-type(2) p,
@@ -180,6 +179,7 @@ form {
     border-radius: 0 0 6px 6px;
     padding: 26px 36px 35px;
     box-shadow: 0px 3px 6px #52575D19;
+    border: none;
 }
 
 .tickets .content span {
@@ -361,7 +361,6 @@ input::placeholder {
     border-radius: 4px 0 0 4px;
     color: #4D4D4D;
     font-size: 12px;
-
 }
 
 .tickets .time {
@@ -500,7 +499,6 @@ textarea:focus {
     outline: none;
 }
 
-
 .tableTickets {
     width: 100%;
     text-align: left;
@@ -540,7 +538,6 @@ textarea:focus {
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    /*    height: 60px;*/
     background-color: white;
     border-bottom: 2px solid rgba(0, 0, 0, 0.08);
     font-size: 16px;
@@ -549,7 +546,6 @@ textarea:focus {
     margin-left: 0;
     /*    overflow-x: auto;*/
     width: 100%;
-
 }
 
 .tableTickets .row:last-of-type {
@@ -740,6 +736,7 @@ textarea:focus {
     padding: 36px;
     align-items: flex-end;
     border-radius: 6px;
+    border: none;
 }
 
 .modalBox .content span {
