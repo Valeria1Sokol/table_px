@@ -51,11 +51,17 @@
     }
 
     .tickets textarea {
-        width: 50.4vw;
+        width: 51.7vw;
     }
 
     .tickets .line .settingsBox {
-        width: 21.7vw;
+        width: 16.7vw;
+        margin-left: 1.6vw;
+    }
+
+    .tickets .line:nth-of-type(4) {
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 }
 
@@ -129,6 +135,13 @@
 
     .tickets .line .settingsBox {
         width: 417px;
+        margin-left: 0;
+    }
+
+
+    .tickets .line:nth-of-type(4) {
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
     .tickets .status {

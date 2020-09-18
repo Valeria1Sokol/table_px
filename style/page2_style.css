@@ -387,7 +387,7 @@ input::placeholder {
 }
 
 .tickets textarea {
-    width: 968px;
+    width: 987px;
     height: 198px;
     border: 2px solid rgba(0, 0, 0, 0.08);
     padding: 15px 20px;
@@ -931,7 +931,7 @@ textarea:focus {
     border: 2px solid #F0B52D;
     opacity: 1;
     color: #4D4D4D;
-    font-size: 10px;
+    font-size: 12px;
     text-align: left;
     width: 304px;
     max-width: 304px;
