@@ -819,6 +819,7 @@ textarea:focus {
     border-radius: 4px 0 0 4px;
     color: #4D4D4D;
     font-size: 12px;
+    text-align: left;
 }
 
 .modalBox .line .date .calendar:focus,
@@ -1095,4 +1096,9 @@ textarea:focus {
 
 .timeForm {
     position: relative;
+}
+
+.form-control:focus {
+    border-color: #193E58;
+    box-shadow: none;
 }

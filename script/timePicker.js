@@ -23,7 +23,7 @@ function timePicker1(id) {
             <a id="plusM" style="background-image: url(../img/arrow-icon-left-cal.png);"></a>
          </div>
       </div>
-      <div id="submitTime"></div>`;
+      <div id="submitTime1"></div>`;
         this.after(timePicker);
         var plusH = document.getElementById('plusH');
         var minusH = document.getElementById('minusH');
@@ -69,7 +69,7 @@ function timePicker1(id) {
         }
 
         //submit timepicker
-        var submit = document.getElementById("submitTime");
+        var submit = document.getElementById("submitTime1");
         submit.onclick = function () {
             input.value = document.getElementById('hour').value + ':' + document.getElementById('minute').value;
             input.removeAttribute('disabled');
