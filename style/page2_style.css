@@ -278,13 +278,34 @@ select {
     background: #fff url(../img/calendar.png) 87% 50% no-repeat;
     background-size: 10%;
 }
+[type="time"] {
+    background: #fff url(../img/clock.png) 87% 50% no-repeat;
+    background-size: 25%;
+}
 
+
+/* 'X' button for resetting/clearing time */
+input[type="time"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Up/Down arrows for incrementing/decrementing the value */
+input[type="time"]::-webkit-inner-spin-button {
+  display: none;
+}
 
 [type="date"]::-webkit-inner-spin-button {
     display: none;
 }
+[type="time"]::-webkit-inner-spin-button {
+    display: none;
+}
+
 
 [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+[type="time"]::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
@@ -375,8 +396,10 @@ input::placeholder {
     border-left: none;
     color: #4D4D4D;
     font-size: 12px;
-    padding: 0;
+    padding: 0 0 0 3px;
     background-color: transparent;
+    -webkit-appearance: none;
+    
 }
 
 .tickets .time:focus,
@@ -836,8 +859,7 @@ textarea:focus {
     padding: 0;
     color: #4D4D4D;
     font-size: 12px;
-    background-image: none;
-    background-color: transparent;
+    padding: 0 10px;
 }
 
 
