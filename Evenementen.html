@@ -12,10 +12,12 @@
 <link rel="stylesheet" href="style/humburgerMenu.css">
 
 
+
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <title>Document</title>
@@ -219,7 +221,9 @@
                                     </div>
                                     <div class="inputsRow">
                                         <label></label>
-                                        <input type="text" class="time" placeholder="" data-input>
+                                        <div class="timeForm">
+                                            <input type="text" id="timePicker5" class="time">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="dateBox">
@@ -229,7 +233,9 @@
                                     </div>
                                     <div class="inputsRow">
                                         <label></label>
-                                        <input type="text" class="time" placeholder="" data-input>
+                                        <div class="timeForm">
+                                            <input type="text" id="timePicker6" class="time">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -241,7 +247,9 @@
                                     </div>
                                     <div class="inputsRow">
                                         <label></label>
-                                        <input type="text" class="time" placeholder="" data-input>
+                                        <div class="timeForm">
+                                            <input type="text" id="timePicker7" class="time">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="dateBox">
@@ -251,7 +259,9 @@
                                     </div>
                                     <div class="inputsRow">
                                         <label></label>
-                                        <input type="text" class="time" placeholder="" data-input>
+                                        <div class="timeForm">
+                                            <input type="text" id="timePicker8" class="time">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -574,16 +584,20 @@
                                 <div class="line">
                                     <div class="date">
                                         <label>Verkoop vanaf<span>*</span></label>
-                                        <div>
+                                        <div style="position: relative">
                                             <input type="text" class="calendar" placeholder="" data-input>
-                                            <input type="text" class="time" placeholder="" data-input>
+                                            <form class="timeForm">
+                                                <input type="text" id="timePicker" class="time2">
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="date">
                                         <label>Verkoop tot<span>*</span></label>
                                         <div>
                                             <input type="text" class="calendar" placeholder="" data-input>
-                                            <input type="text" class="time" placeholder="" data-input>
+                                            <form class="timeForm">
+                                                <input type="text" id="timePicker2" class="time2">
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -592,14 +606,18 @@
                                         <label>Ticket geldig vanaf<span>*</span></label>
                                         <div>
                                             <input type="text" class="calendar" placeholder="" data-input>
-                                            <input type="text" class="time" placeholder="" data-input>
+                                            <form class="timeForm">
+                                                <input type="text" id="timePicker3" class="time2">
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="date">
                                         <label>Ticket geldig tot<span>*</span></label>
                                         <div>
                                             <input type="text" class="calendar" placeholder="" data-input>
-                                            <input type="text" class="time" placeholder="" data-input>
+                                            <form class="timeForm">
+                                                <input type="text" id="timePicker4" class="time2">
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -646,11 +664,15 @@
 
         </section>
     </div>
-
-    <script src="script/script.js"></script>
-
-    <!--    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 
@@ -697,20 +719,8 @@
             }
         });
 
-        var time = flatpickr(".time", {
-            enableTime: true,
-            noCalendar: true,
-            dateFormat: "H:i",
-            time_24hr: true
-        });
-        $(function() {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-        //        $('#example').tooltip(options);
-
     </script>
-
-
+    <script src="script/timePicker.js"></script>
 
 </body>
 

@@ -38,8 +38,12 @@ $('.hasSub').click(function () {
 });
 
 var modal1 = document.getElementById("closeAll");
- window.onclick = function (event) {
-           if (event.target == modal1) {
-               $('#menu__toggle').prop('checked', false);
-           }
-       } 
+window.onclick = function (event) {
+    if (event.target == modal1) {
+        $('#menu__toggle').prop('checked', false);
+    }
+}
+
+ 
+   
+
