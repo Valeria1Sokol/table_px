@@ -166,7 +166,7 @@
                     </div>
                 </div>
             </div>
-            <div class="widthBox">
+            <div class="widthBox 2">
                 <div class="tickets">
                     <div class="rowHead">
                         <p>Tickets</p>
@@ -174,7 +174,7 @@
                     </div>
                     <form class="content">
                         <div class="line">
-                            <div class="clm1">
+                            <div class="clm1 clm2">
                                 <div class="inputsRow">
                                     <label>Ticket naam<span>*</span></label>
                                     <input type="text" class="name" placeholder="Ticket naam...">
@@ -185,7 +185,7 @@
                                     <input type="text" placeholder="125" class="aantal">
                                 </div>
                             </div>
-                            <div class="clm1">
+                            <div class="clm1 clm3">
                                 <div class="inputsRow">
                                     <label>Prijs<span>*</span></label>
                                     <div class="prijs">
@@ -303,12 +303,12 @@
                                 <div class="inputsRow">
                                     <input type="checkbox">
                                     <input type="checkbox">
-                                    <a class="btn yellowBtn  push">
-                                        <span>+</span>
-                                        Toevoegen</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="line"> <a class="btn yellowBtn  push">
+                                <span>+</span>
+                                Toevoegen</a></div>
                     </form>
                 </div>
             </div>
@@ -669,6 +669,7 @@
                 })
             }
         }
+
     </script>
     <script src="script/sortable.js"></script>
     <script>
@@ -706,8 +707,11 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
         //        $('#example').tooltip(options);
+
     </script>
 
 
 
-</body></html>
+</body>
+
+</html>

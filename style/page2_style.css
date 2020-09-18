@@ -101,7 +101,14 @@ form {
 }
 
 .tabsBox .tabsLine:first-of-type .tab:first-of-type p {
-    border: none;
+
+    border-bottom: 0.5px solid white;
+    border-right: none;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tabsBox .tabActive {
@@ -138,10 +145,7 @@ form {
     flex-wrap: wrap;
     flex-direction: column;
     background-color: white;
-    border-radius: 0.32vw;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-    border-left: 2px solid rgba(0, 0, 0, 0.08);
-    border-right: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
     margin-bottom: 10px;
 }
 
@@ -171,6 +175,7 @@ form {
     font-weight: 500;
     border-radius: 0 0 6px 6px;
     padding: 26px 36px 35px;
+    box-shadow: 0px 3px 6px #52575D19;
 }
 
 .tickets .content span {
@@ -193,6 +198,14 @@ form {
     align-items: flex-end;
     justify-content: space-between;
     /*    margin: 0 0 22px;*/
+}
+
+.tickets .line:nth-of-type(4) {
+    align-items: flex-start;
+}
+
+.tickets .line:nth-of-type(4) .inputsRow:last-of-type {
+    margin-left: 50px;
 }
 
 .tickets input,
@@ -221,7 +234,7 @@ select {
     padding: 0 20px;
     border: 2px solid rgba(0, 0, 0, 0.08);
     border-radius: 4px;
-    color: #808080;
+    color: #4D4D4D;
     font-size: 12px;
 }
 
@@ -235,7 +248,7 @@ input:focus,
 select:focus,
 textarea:active,
 textarea:focus {
-    border: 2px solid rgba(0, 0, 0, 0.08);
+    border: 2px solid #193E58;
     outline: none;
 }
 
@@ -378,14 +391,16 @@ input::placeholder {
     height: 198px;
     border: 2px solid rgba(0, 0, 0, 0.08);
     padding: 15px 20px;
-    color: #808080;
+    color: #4D4D4D;
+    font-size: 12px;
+    border-radius: 4px;
 }
 
 .tickets .line .settingsBox {
     width: 417px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 28px 0 0 0;
     font-weight: 400;
@@ -457,6 +472,12 @@ select option {
     font-weight: normal;
 }
 
+textarea:active,
+textarea:focus {
+    border: 2px solid #193E58;
+    outline: none;
+}
+
 
 .tableTickets {
     width: 100%;
@@ -480,8 +501,10 @@ select option {
 
 #sortablelist2,
 #sortablelist3 {
-    overflow-x: scroll;
+    /*    overflow-x: scroll;*/
     border-radius: 0 0 6px 0;
+    display: contents;
+    flex-wrap: wrap;
 }
 
 #sortablelist2::-webkit-scrollbar,
@@ -494,14 +517,15 @@ select option {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: 60px;
+    height: auto;
+    /*    height: 60px;*/
     background-color: white;
     border-bottom: 2px solid rgba(0, 0, 0, 0.08);
     font-size: 16px;
     color: #4D4D4D;
     margin-right: 0;
     margin-left: 0;
-    overflow-x: auto;
+    /*    overflow-x: auto;*/
     width: 100%;
 
 }
@@ -515,14 +539,14 @@ select option {
 }
 
 .tableTickets .row .column {
-    height: 100%;
+    height: 60px;
     display: flex;
     align-items: center;
 }
 
 .tableTickets .row .column1 {
     border-left: 5px solid transparent;
-    padding: 6px 0 6px 1.56vw;
+    padding: 6px 0 6px 31px;
 }
 
 .tableTickets .row:hover .column1 {
@@ -586,15 +610,17 @@ select option {
 }
 
 .column1 {
-    width: 16.6%;
+    /*    width: 16.6%;*/
+    width: 253px;
 }
 
 .column2,
 .column3,
 .column6,
 .column7 {
-    width: 8.5%;
-    height: 100%;
+    /*    width: 8.5%;*/
+    width: 128px;
+    height: 60px;
     padding: 6px 0;
 }
 
@@ -603,20 +629,24 @@ select option {
 }
 
 .column4 {
-    width: 17.1%;
+    width: 261px;
+    /*    width: 17.1%;*/
     padding: 6px 0;
     padding-left: 33px;
 }
 
 .column5 {
-    width: 25.6%;
+    width: 381px;
+    /*    width: 25.6%;*/
     text-align: center;
     padding: 6px 0;
     justify-content: center;
 }
 
 .column8 {
-    width: 6.3%;
+    width: 99px;
+    height: 60px;
+    /*    width: 6.3%;*/
     padding: 6px 0;
     justify-content: center;
     align-items: center;
@@ -857,7 +887,7 @@ select option {
     color: #FFFFFF !important;
     border: none;
     width: 173px;
-    margin-top: 42px;
+    margin: -50px 0 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;

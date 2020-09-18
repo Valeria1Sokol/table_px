@@ -1,12 +1,185 @@
+@media all and (max-width:1919px) {
+    .widthBox2 {
+        max-width: 100%;
+        width: 100%;
+        display: contents;
+        flex-wrap: nowrap;
+    }
+
+    .tickets .line .clm1 {
+        width: 48.7%;
+    }
+
+    .tickets .name {
+        width: 30.1vw;
+    }
+
+    .tickets .prijs input {
+        width: 6.9vw;
+    }
+
+    .tickets .line .clm1 {
+        flex-wrap: nowrap;
+    }
+
+    .tickets .aantal {
+        width: 4.8vw;
+    }
+
+    .tickets .status {
+        width: 14.6vw;
+    }
+
+    .tickets .calendar {
+        width: 12.9vw;
+    }
+
+    .tickets .time {
+        width: 4.5vw;
+    }
+
+    .tickets .template {
+        width: 17.4vw;
+    }
+
+    .tickets .groep {
+        width: 17.4vw;
+    }
+
+    .tickets .text {
+        width: 21.7vw;
+    }
+
+    .tickets textarea {
+        width: 50.4vw;
+    }
+
+    .tickets .line .settingsBox {
+        width: 21.7vw;
+    }
+}
+
+@media all and (max-width:1600px) {
+
+    .tickets .text {
+        width: 16.7vw;
+    }
+
+    .tickets .groep,
+    .tickets .template {
+        width: 15.4vw;
+    }
+
+    .tickets .name {
+        width: 27.1vw;
+    }
+
+    .tickets .prijs input {
+        width: 5.9vw;
+    }
+
+    .tickets .line .clm1 {
+        flex-wrap: nowrap;
+    }
+
+    .tickets .aantal {
+        width: 3.8vw;
+    }
+
+    .tickets .status {
+        width: 10.6vw;
+    }
+
+    .tickets .calendar {
+        width: 10.9vw;
+    }
+
+
+
+    .tickets .minMax input {
+        width: 5.8vw;
+    }
+
+    .tickets textarea {
+        width: 43.4vw;
+    }
+
+    .column5 p {
+        justify-content: flex-start;
+        padding: 6px 0 6px 36px;
+    }
+}
+
 @media all and (max-width:1560px) {
+    /*
     .tableTickets .row {
         width: 140%;
         justify-content: flex-start;
     }
+*/
 }
 
-@media all and (max-width:1460px) {
-    .tickets .line:last-of-type form:first-of-type {
+@media all and (max-width:1439px) {
+    .widthBox2 {
+        max-width: 1508px;
+        width: 1508px;
+        display: contents;
+        flex-wrap: wrap;
+    }
+
+    .tickets .line .settingsBox {
+        width: 417px;
+    }
+
+    .tickets .status {
+        width: 281px;
+    }
+
+    .tickets .prijs input {
+        width: 133px;
+    }
+
+    .tickets .name {
+        width: 578px;
+    }
+
+    .tickets .aantal {
+        width: 93px;
+    }
+
+    .tickets .calendar {
+        width: 247px;
+    }
+
+    .tickets .time {
+        width: 89px;
+    }
+
+    .tickets .template {
+        width: 336px;
+    }
+
+    .tickets .groep {
+        width: 336px;
+    }
+
+    .tickets .text {
+        width: 417px;
+    }
+
+    .tickets .minMax input {
+        width: 113px;
+    }
+
+    .tickets textarea {
+        /*        width: 968px;*/
+    }
+
+    .tickets .line .clm1 {
+        flex-wrap: wrap;
+    }
+
+    .tickets .line:nth-of-type(4) .inputsRow:first-of-type {
         width: 100%;
     }
 
@@ -55,9 +228,42 @@
         width: 100%;
     }
 
+
+
+}
+
+@media all and (max-width:1154px) {
+    .clm2 .inputsRow:first-of-type {
+        width: 80%;
+    }
+
+    .tickets .name {
+        width: 100%;
+    }
 }
 
 @media all and (max-width:1024px) {
+
+    .clm3 .inputsRow:first-of-type,
+    .clm3 .inputsRow:nth-of-type(2) {
+        width: 48%;
+    }
+
+    .clm3 .inputsRow:last-of-type {
+        width: 100%;
+    }
+
+    .tickets .status {
+        width: 100%;
+        background-size: 2%;
+        background-position: 95% center;
+    }
+
+    .tickets .prijs input {
+        width: 100%;
+    }
+
+    /*
     .tableTickets .row {
         width: 240%;
         justify-content: flex-start;
@@ -75,6 +281,7 @@
         padding: 6px 0;
         justify-content: center;
     }
+*/
 
     .tickets .name {
         width: 450px;
@@ -189,13 +396,32 @@
         width: 80%;
     }
 
-    .yellowBtn {
-        margin: 42px 0 0 -7px;
-    }
+
+    /*
     .tableTickets .row {
-    width: 355%;
-    justify-content: flex-start;
+        width: 355%;
+        justify-content: flex-start;
+    }
+*/
+
 }
+
+@media all and (max-width:425px) {
+
+    .tableTickets .row .column2,
+    .tableTickets .row .column3,
+    .tableTickets .row .column4,
+    .tableTickets .row .column5,
+    .tableTickets .row .column6,
+    .tableTickets .row .column7,
+    .tableTickets .row .column8 {
+        display: none;
+    }
+
+    .tableTickets .row .column1 {
+        width: 100%;
+    }
+
 
 }
 
